@@ -4,7 +4,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/assets/hkis.png');
+  background-image: url('/assets/hkis.png');
   background-size: cover;
   background-position: center;
   position: relative;

@@ -11,7 +11,7 @@ function Home(){
         <section className="scroll-section">
           <div className="section-content">
             <h2 className="section-heading">Find Lost Items</h2>
-            <p>Search through our database of found items to locate your lost belongings.</p>
+            <p>Lost something? Look through our database of found items to locate your lost belongings.</p>
             <a href="/find">
               <button className="primary-button">Search Items</button>
             </a>
@@ -20,7 +20,7 @@ function Home(){
         <section className="scroll-section">
           <div className="section-content">
             <h2 className="section-heading">Report Found Items</h2>
-            <p>Help others by reporting items you've found on campus.</p>
+            <p>Found something? Help others by submitting items you've found on campus.</p>
             <a href="/post">
               <button className="primary-button">Report Item</button>
             </a>
