@@ -1,5 +1,8 @@
 :root{
-    --yellow:#ac0809;
+    --primary: #ac0809;  /* HKIS red */
+    --text-dark: #333333;
+    --text-light: #ffffff;
+    --bg-light: #f5f7fa;
 }
 html{
     scroll-behavior: smooth;
@@ -12,7 +15,7 @@ html{
 }
 
 body{
-    background-color: #041c32;
+    background-color: white;  /* Change from dark to light background */
 }
 /* --------------------------------------------------Nav Bar ------------------------------------ */
 nav{
@@ -21,12 +24,13 @@ nav{
     align-items: center;
     justify-content: space-between;
     padding: 5px 2%;
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(255, 255, 255, 0.9);  /* Lighter nav background */
     width: 100vw;
     top: 0;
     left: 0;
     z-index: 1000;
     backdrop-filter:blur(30px);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 nav img{
     width: 60px;
@@ -39,7 +43,10 @@ nav ul li{
 nav ul li a{
     text-decoration: none;
     font-size: 17px;
-    color: var(--yellow);
+    color: var(--text-dark);
+}
+nav ul li a:hover {
+    color: var(--primary);
 }
 .menu-container{
     display: none;

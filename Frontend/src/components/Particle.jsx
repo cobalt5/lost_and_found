@@ -1,25 +1,18 @@
-import Particles from "react-tsparticles";
-import { useCallback } from "react";
-import particleconfig from "./config/particleconfig";
-// import { loadFull } from "tsparticles";
-import { loadSlim } from "tsparticles-slim";
-export default function Particle() {
- const particlesInit = useCallback(async (engine) => {
-   console.log(engine);
-  //  await loadFull(engine);
-  await loadSlim(engine);
- }, []);
+import React from 'react';
+import styled from 'styled-components';
 
- const particlesLoaded = useCallback(async (container) => {
-   await console.log(container);
- }, []);
+const BackgroundContainer = styled.div`
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: -1;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+`;
 
-  return (
-    <Particles
-      options={particleconfig}
-      id="tsparticles"
-      init={particlesInit}
-      loaded={particlesLoaded}
-    />
-  );
-}
+const Particle = () => {
+  return <BackgroundContainer />;
+};
+
+export default Particle;
