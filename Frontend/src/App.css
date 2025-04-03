@@ -3,6 +3,7 @@
     --text-dark: #333333;
     --text-light: #ffffff;
     --bg-light: #f5f7fa;
+    --bg-dark: #f0f2f5;
 }
 html{
     scroll-behavior: smooth;
@@ -16,21 +17,22 @@ html{
 
 body{
     background-color: white;  /* Change from dark to light background */
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 /* --------------------------------------------------Nav Bar ------------------------------------ */
 nav{
+    background-color: #00283f;  /* Changed from purple to dark blue */
+    padding: 0.5rem 2rem;
     position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    height: 80px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    padding: 5px 2%;
-    background-color: rgba(255, 255, 255, 0.9);  /* Lighter nav background */
-    width: 100vw;
-    top: 0;
-    left: 0;
-    z-index: 1000;
-    backdrop-filter:blur(30px);
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 nav img{
     width: 60px;
@@ -41,12 +43,13 @@ nav ul li{
     margin: 20px;
 }
 nav ul li a{
+    color: var(--text-light);  /* Changed to white text for better contrast */
     text-decoration: none;
-    font-size: 17px;
-    color: var(--text-dark);
+    font-weight: 500;
+    transition: color 0.3s ease;
 }
 nav ul li a:hover {
-    color: var(--primary);
+    color: #c50000;  /* Changed to red */
 }
 .menu-container{
     display: none;
@@ -133,7 +136,8 @@ footer a:hover{
 }
 /* -----------------------------------------------find page ------------------------------------------- */
 #findpage section{
-    margin-top: 70px;
+    margin-top: 0;
+    padding-top: 80px;
     padding: 0 5%;
     /* width: 100vw; */
     display: flex;
@@ -232,7 +236,8 @@ a{
 /* -----------------------------------Post item page ----------------------------- */
 
 #postItem section{
-    margin-top: 70px;
+    margin-top: 0;
+    padding-top: 80px;
     width: 100vw;
     display: flex;
     justify-content: center;
@@ -240,17 +245,16 @@ a{
     flex-direction: column;
 }
 .form-container{
-    width:600px;
-    border: 2px solid white;
+    width: 600px;
+    border: 2px solid #00283f;  /* Changed from purple to dark blue */
     padding: 20px;
-    /* height: 40vw; */
-    /* background-color: red; */
-    color: white;
+    color: #333;
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
     border-radius: 16px;
+    background-color: white;
 }
 .form-container h2{
     text-align: start;
@@ -258,7 +262,7 @@ a{
     font-size: 1.2rem;
     font-weight: 500;
     margin-bottom: 20px;
-    color: gray;
+    color: #00283f;  /* Changed from purple to dark blue */
 }
 .form{
     width: 500px;
@@ -273,11 +277,11 @@ width: 500px;
     margin-bottom: 20px;
     height: 40px;
     border-radius: 8px;
-    border: 2px solid gray;
+    border: 2px solid #00283f;  /* Changed from purple to dark blue */
     outline: none;
     width: 500px;
-    background-color: black;
-    color: white;
+    background-color: white;  /* Changed to white */
+    color: #333;  /* Changed to dark gray */
     padding: 0 10px;
     transition: .15s;
 }
@@ -286,28 +290,28 @@ width: 500px;
     width: 500px;
     border-radius: 8px;
     margin-bottom: 10px;
-    border: 2px solid gray;
+    border: 2px solid #00283f;  /* Changed from purple to dark blue */
     outline: none;
-    background-color: black;
-    color: white;
+    background-color: white;  /* Changed to white */
+    color: #333;  /* Changed to dark gray */
     padding: 5px 10px;
 }
 .form label{
     position: absolute;
-    color:gray;
+    color: #00283f;  /* Changed from purple to dark blue */
     top: -10px;
     left: 15px;
-    background-color: black;
+    background-color: white;
     padding: 0 4px;
 }
 .submitbtn{
-    background-color: var(--yellow);
+    background-color: #00283f;  /* Changed from purple to dark blue */
     font-size: 1rem;
     font-weight: 600;
-    border: var(--yellow);
+    border: none;
     text-transform: uppercase;
     letter-spacing: 1px;
-    color: black;
+    color: white;  /* Changed to white */
     cursor: pointer;
 }
 .form input[type=file]{
@@ -316,18 +320,19 @@ width: 500px;
 
 }
 .form input:focus, .form textarea:focus{
-    border: 2px solid var(--yellow);
+    border: 2px solid #c50000;  /* Changed to red */
 }
 .input-container label:hover{
-    color: var(--yellow);
+    color: #c50000;  /* Changed to red */
 }
 .submitbtn:hover{
-    background-color: #e4d913;
+    background-color: #c50000;  /* Changed to red */
 }
 
 /* ------------------------------------details page------------------------ */
 #detailspage section{
-    margin-top: 70px;
+    margin-top: 0;
+    padding-top: 80px;
     /* min-height: 90vh; */
     display: flex;
     justify-content: center;
@@ -400,8 +405,8 @@ margin: 12px 0;
 
 /* Bus Link Page Styles */
 .bus-content {
+    padding-top: 100px;
     text-align: center;
-    padding: 2rem;
     max-width: 800px;
     margin: 0 auto;
 }
@@ -418,7 +423,7 @@ margin: 12px 0;
 }
 
 .bus-link:hover {
-    background-color: #8b0000;
+    background-color: #c50000;  /* Changed to red */
 }
 
 @media only screen and (max-width: 750px) {
@@ -623,4 +628,18 @@ nav ul li a{
     width: 100vw;
     gap: 1px;
 }
+}
+
+/* Add padding to main content areas to prevent navbar overlap */
+main {
+    padding-top: 80px; /* Same as navbar height */
+}
+
+.hero-section {
+    padding-top: 80px; /* Add padding to hero section */
+}
+
+/* Add hover effect for any links */
+a:hover {
+    color: #c50000;  /* Changed to red */
 }
