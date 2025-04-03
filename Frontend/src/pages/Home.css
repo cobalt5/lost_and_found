@@ -4,7 +4,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: url('/assets/hkis.png');
+  background-image: import hkisImage from '../assets/hkis.png';
   background-size: cover;
   background-position: center;
   position: relative;
