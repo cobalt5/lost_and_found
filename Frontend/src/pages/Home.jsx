@@ -6,7 +6,7 @@ function Home(){
     return (
       <>
         <section className="hero-section">
-          <h1 className="main-heading">HKIS Lost and Found</h1>
+          <h1 className="main-heading">THIS IS A TEST DO NOT APPROVE THIS COMMIT</h1>
         </section>
         <section className="scroll-section">
           <div className="section-content">
