@@ -14,7 +14,7 @@ function Find() {
   AOS.init({duration:750})
  },[])
 
- const override: CSSProperties = {
+ const override = {
    display: "block",
    borderColor: "#fdf004",
    position: "absolute",
