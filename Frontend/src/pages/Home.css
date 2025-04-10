@@ -2,13 +2,15 @@
   height: 100vh;
   width: 100%;
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-end;
   background-image: url('../assets/hkis.png');
   background-size: 75% auto;
   background-position: center;
   background-repeat: no-repeat;
   position: relative;
+  padding-bottom: 50px;
 }
 
 .hero-section::after {
@@ -18,7 +20,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.3);
+  background: rgba(0, 0, 0, 0);
 }
 
 .content-section {
@@ -30,13 +32,14 @@
 
 .main-heading {
   font-size: 4rem;
-  color: white;
+  color: #00283f;
   text-align: center;
   position: relative;
   z-index: 1;
   margin: 0;
   font-weight: 600;
   letter-spacing: -0.02em;
+  margin-top: 20px;
 }
 
 .scroll-section {

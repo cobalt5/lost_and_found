@@ -146,22 +146,23 @@ footer a:hover{
 .lfh1{
     margin: 0px 0 50px 0;
     text-align: center;
-   color: rgb(0, 255, 217);
-   /* font-size: 2.2rem; */
-   position: relative;
-   display: block
+    color: rgb(0, 255, 217);
+    font-size: 3.5rem;  /* Increased from default size */
+    position: relative;
+    display: block;
+    font-weight: 600;  /* Make it bolder */
+    text-transform: uppercase;  /* Make it all caps for more impact */
+    letter-spacing: 2px;  /* Add some letter spacing */
 }
 .lfh1::after{
     content: '';
-    width: 100px;
-    background-color:var(--yellow);
-    height: 2px;
+    width: 150px;  /* Made the underline wider */
+    background-color: var(--primary);
+    height: 3px;  /* Made the underline slightly thicker */
     position: absolute;
-    top: 47px;
+    top: 80px;  /* Adjusted for new font size */
     left: 50%;
     transform: translatex(-50%);
-    /* right: 50%; */
-    /* transform: translateY(-50%); */
     border-radius: 6px;
 }
 .item-container{
@@ -205,8 +206,7 @@ footer a:hover{
 }
 .card-desc{
     margin: 20px 0;
-}
-.card-desc h2{
+}.card-desc h2{
 color: white;
 margin-bottom:0px;
 font-size: 20px;
@@ -466,8 +466,7 @@ nav ul{
     align-items: center;
     padding-top: 30px;
     transition: .5s ease;
-}
-nav ul{
+}nav ul{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -503,11 +502,12 @@ nav{
 
 
     .lfh1{
-        margin-bottom: 25px;
-        font-size: 1.8rem ;
+        margin-bottom: 35px;
+        font-size: 2.5rem;
     }
     .lfh1::after{
-        top: 40px;
+        top: 60px;
+        width: 120px;
     }
     .form{
         width: 100vw;
@@ -643,3 +643,5 @@ main {
 a:hover {
     color: #c50000;  /* Changed to red */
 }
+
+
