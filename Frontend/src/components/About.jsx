@@ -4,7 +4,7 @@ function About(){
         <h1 className="lfh1">About Us</h1>
         <p className="about-desc">
         <p>Designed and Built by <a href="https://arjuncvinod.me">Arjun C Vinod</a></p>
-          Welcome to our online community dedicated to helping you find lost
+          Welcome to our online community dedicated to helping HKIS students find lost
           items and reconnect with cherished possessions. At Lost and Found, we
           understand the heartache and frustration that losing something
           valuable can bring. Whether it's a beloved pet, a sentimental piece of
